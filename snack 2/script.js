@@ -1,3 +1,5 @@
+//Inserisci un numero, se è pari stampa il numero,
+//se è dispari stampa il numero successivo
 var nuovoNumero = 0;
 nuovoNumero = parseInt(prompt("Inserisci un numero (for): "));
 while (isNaN(nuovoNumero)) {
