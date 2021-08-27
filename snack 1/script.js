@@ -5,6 +5,9 @@ var nuovoNumero = 0;
 var somma = 0;
 for (var i = 0; i < 5; i++) {
     nuovoNumero = parseInt(prompt("Inserisci un numero (for): "));
+    while (isNaN(nuovoNumero)) {
+        nuovoNumero = parseInt(prompt("Errore! Inserisci un numero valido (for): "));
+    }
     somma += nuovoNumero;
 }
 alert("Somma (for): " + somma);
@@ -14,6 +17,9 @@ var somma2 = 0;
 var index = 0;
 while (index < 5 ){
     nuovoNumero2 = parseInt(prompt("Inserisci un numero (while): "));
+    while (isNaN(nuovoNumero2)) {
+        nuovoNumero2 = parseInt(prompt("Errore! Inserisci un numero valido (while): "));
+    }
     somma2 += nuovoNumero2; 
     index++;
 }
