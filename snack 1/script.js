@@ -9,8 +9,9 @@ for (var i = 0; i < 5; i++) {
         nuovoNumero = parseInt(prompt("Errore! Inserisci un numero valido (for): "));
     }
     somma += nuovoNumero;
+    document.getElementById("numeriFor").innerHTML += nuovoNumero + ', ';
 }
-alert("Somma (for): " + somma);
+document.getElementById("numeriFor").innerHTML += '<br>' + 'Somma: ' + somma;
 
 var nuovoNumero2 = 0;
 var somma2 = 0;
@@ -21,6 +22,7 @@ while (index < 5 ){
         nuovoNumero2 = parseInt(prompt("Errore! Inserisci un numero valido (while): "));
     }
     somma2 += nuovoNumero2; 
+    document.getElementById("numeriWhile").innerHTML += nuovoNumero2 + ', ';
     index++;
 }
-alert("Somma (while): " + somma2);
+document.getElementById("numeriWhile").innerHTML += '<br>' + 'Somma: ' + somma2;
